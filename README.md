@@ -1,4 +1,4 @@
-![Logo de TEXELYC](https://github.com/tu_usuario/tu_repositorio/blob/main/logo.png)
+![Logo de TEXELYC](https://github.com/Codebyte7/texelyc./blob/main/logo.png?raw=true)
 
 
 # TEXELYC
