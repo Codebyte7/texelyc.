@@ -1,3 +1,6 @@
+![Logo de TEXELYC](https://github.com/tu_usuario/tu_repositorio/blob/main/logo.png)
+
+
 # TEXELYC
 
 ## Objetivos
