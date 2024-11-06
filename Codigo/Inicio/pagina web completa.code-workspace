@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "REGISTRO",
+			"path": "../../../../../../../xampp/htdocs/REGISTRO"
+		},
+		{
+			"name": "LOGIN",
+			"path": "../../../../../../../xampp/htdocs/LOGIN"
+		},
+		{
+			"path": "../../../../../../../xampp/htdocs/Menu"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Menu"
+	}
+}
