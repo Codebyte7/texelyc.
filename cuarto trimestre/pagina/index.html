@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+     
+    <header class="header">
+        
+        <div class="menu container">
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/images/index/logo.png" alt="">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./images/index/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">HODDIES</a></li>
+                    <li><a href="#">CAMISAS</a></li>
+                    <li><a href="#">GORRAS</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="./assets/images/index/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>producto</th>
+                                        <th>nombre</th>
+                                        <th>precio</th>
+                                        <th>cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
+                            <a href="carrito.html" class="pagar">Pagar</a>
+                            <p class="total" >Total: $<span id="total" >0</span></p>
+                        </div>
+                    </li>
+                    <li class="usuario">                     
+                    <img src="./assets/images/index/users.svg" id="usuario-img" alt="usuario" class="usuario-img">
+                        <div id="menu-usuario">
+                            <table id="lista-usuario">
+                                <ul><a href="./User_Login-Registro/User_Log-Reg.html">Iniciar sesión / </a></ul>
+                                <ul><a href="./Login-Admin/Login-Admin.php">Inicio Admin</a></ul>
+                            </table>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="./assets/images/index/inicio.png" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>ofertas especiales</h1>
+                <p>estrena las mejores prendas</p>
+                <a href="#" class="btn-1">información</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img" class="">
+                <img src="./assets/images/index/ronaldo.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>DTF</h3>
+                <a href="#" class="btn-2">información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="./assets/images/index/mug_estamp.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>SUBLIMACIÓN</h3>
+                <a href="#" class="btn-2">información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="./assets/images/index/gorra_estamp.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>VINIL TEXTIL</h3>
+                <a href="#" class="btn-2">información</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="products container" id="lista-1">  
+
+        <h2>productos</h2>
+
+        <div class="product-content">
+            <div class="product">
+                <img src="./assets/images/index/product_1.png" alt="">
+                <div class="product-txt">
+                    <h3>ruana gallo</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$200.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./assets/images/index/product_2.png" alt="">
+                <div class="product-txt">
+                    <h3>mochila anime</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$150.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="./assets/images/index/product_3.png" alt="">
+                <div class="product-txt">
+                    <h3>camiseta oversite</h3>
+                    <p>algodon</p>
+                    <p class="precio">$75.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product ">
+                <img  class="botella" src="./assets/images/index/product_4.png" alt="">
+                <div class="product-txt">
+                    <h3>botella groot</h3>
+                    <p>acero</p>
+                    <p class="precio">$50.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./assets/images/index/product_5-removebg-preview.png" alt="">
+                <div class="product-txt">
+                    <h3>billetera</h3>
+                    <p>mujer maravilla</p>
+                    <p class="precio">$25.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img  class="botella" src="./assets/images/index/product_6.png" alt="">
+                <div class="product-txt">
+                    <h3>botella</h3>
+                    <p>jerry</p>
+                    <p class="precio">$25.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <section class="icons container">
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="./assets/images/index/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="./assets/images/index/si2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="./assets/images/index/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="blog container">
+
+        <div class="blog-1">
+            <img src="./assets/images/index/b1.jpg" alt="">
+            <h3>blog 1</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+                 praesentium molestias earum expedita rerum perspiciatis illo reiciendis 
+                 quia veritatis, est, corporis quasi 
+                commodi pariatur suscipit. Eum fugiat quibusdam suscipit quaerat?
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="./assets/images/index/b2.jpg" alt="">
+            <h3>blog 2</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+                 praesentium molestias earum expedita rerum perspiciatis illo reiciendis 
+                 quia veritatis, est, corporis quasi 
+                commodi pariatur suscipit. Eum fugiat quibusdam suscipit quaerat?
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="./assets/images/index/b3.jpg" alt="">
+            <h3>blog 3</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+                 praesentium molestias earum expedita rerum perspiciatis illo reiciendis 
+                 quia veritatis, est, corporis quasi 
+                commodi pariatur suscipit. Eum fugiat quibusdam suscipit quaerat?
+            </p>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <a href="#">
+                <img class="admin" src="./assets/images/index/admin.svg" alt="Descripción de la imagen" >
+                </a>
+         </div>
+           
+         
+
+    </footer>
+    
+    
+    <script src="./script/script.js"></script>    
+</body>
+</html>

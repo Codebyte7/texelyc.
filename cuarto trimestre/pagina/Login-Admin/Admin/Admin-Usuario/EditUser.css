@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc6c6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #0b228ad8;
+    color: #fff;
+    padding: 1px 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: sticky;
+}
+
+main{
+    display: block; /*block establece que un elemento ocupará todo el espacio disponible por defecto y el siguiente elemento a este se situará por debajo*/
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #fff;
+}

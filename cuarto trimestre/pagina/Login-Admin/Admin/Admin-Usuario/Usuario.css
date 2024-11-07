@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc6c6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #0b228ad8;
+    color: #fff;
+    padding: 1px 0;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+}
+
+main{
+    display: block; /*block establece que un elemento ocupará todo el espacio disponible por defecto y el siguiente elemento a este se situará por debajo*/
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #fff;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos del formulario */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para <nav class = "tab-menu"> */
+.tab-menu{ 
+    display: flex; /*aplica un comportamiento predecible y adaptable a las etiquetas contenidas*/
+    justify-content: space-between; /*Distribuye los elementos proporcionalmente equitativo*/
+    align-items: center; /*Centra los elementos verticalmente*/
+    width: 100%; /* Ocupa el 100% del ancho de la etiqueta que lo contiene (main) */
+}
+
+.tab{
+    flex: 1; /*Aplica espacio proporcional a cada elemento  ( 1 = flex-grow) tambien se puede usar (flex = auto;)*/
+    display: flex;
+    justify-content: center; /*Centra la imagen Horizontalmente*/
+    background-color: #fff; /*Color de Fondo*/
+    border: 1.5px solid #121212; /*border = (tamaño)  (estilo)  (color)*/
+    border-block-end: none;  /*Elimina el borde inferior del bloque*/
+    padding: 5px; /*Espacion interno del Button*/
+    cursor: pointer; /* Click de Seleccion */
+    transition: background-color 0.3s ease;
+    transform: 0.3s ease;
+    opacity: 0.3s ease;
+}
+.tab:hover{
+    transform: scale(1.01);
+}
+
+.tab-hide{ /*Estilo para boton indicador de modulo no seleccionado*/
+    background-color: #aaa;
+    border-block-end: 1.7px solid #121212;
+    
+}
+.tab-hide:hover{ /* hover a boton de section no abierto*/
+    background-color: #fff;
+}
+
+.tab img { /*Estilos para <img src="../../../assets/images/Admin/search-user.png" alt="Busqueda de usuario">*/
+
+    width: 40px; /*Ancho Especifico de la Imagen*/
+    height: auto; /*Alto Proporcional de la Imagen*/
+    object-fit: contain; /*Mantiene la proporcinó de la imagen dentro del espacio del contenedor*/
+}
+
+.tabContent{    /*Sections que contienen los modulos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ajusta el ancho para que ocupe un espacio adecuado en la página */
+    height: auto;
+    margin: 20px auto; /* Centra el contenedor horizontalmente y agrega un margen vertical */
+    background-color: #fff;
+    border: 1.5px solid #121212;
+    border-top: none;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra para un mejor efecto visual */
+
+}
+.tabContent-hide{ /*Oculta el section que no se está usando*/
+    display: none;
+}
+
+.searchContainer, .formAddUser { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;       
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+}
+.userResultSearchTable { 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio adicional para separar de otros elementos */
+}
+.userOptionBttnCont {
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones de manera equitativa */
+    align-items: center;
+    width: 100%;
+}
+.userOptionBttn{
+    flex: 1; /*Aplica espacio proporcional a cada elemento  ( 1 = flex-grow) tambien se puede usar (flex = auto;)*/
+    display: flex;
+    justify-content: center; /*Centra la imagen Horizontalmente*/
+    background-color: #fff; /*Color de Fondo*/
+    border: 1.5px solid #121212; /*border = (tamaño)  (estilo)  (color)*/
+    border-block-end: none;  /*Elimina el borde inferior del bloque*/
+    padding: 5px; /*Espacion interno del Button*/
+    cursor: pointer; /* Click de Seleccion */
+    transition: background-color 0.3s ease;
+    transform: 0.3s ease;
+    opacity: 0.3s ease;
+    grid: 1px;
+}
+.userOptionBttn:hover{
+    background-color: #aaa;
+}
+.userOptionBttn img{
+    width: 20px; /*Ancho Especifico de la Imagen*/
+    height: auto; /*Alto Proporcional de la Imagen*/
+    object-fit: contain; /*Mantiene la proporcinó de la imagen dentro del espacio del contenedor*/
+}
+/* 
+
+.modalHide{
+    display: none;
+}
+    
+*/
+
+
+.formAddUser{
+    display: block;
+    justify-content: center;
+    width: min-content;
+    height: auto ;
+}
+
+
+

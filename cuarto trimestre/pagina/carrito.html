@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="./images/index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .submenu {
+            background: #4e4e5076;
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        th {
+            color: #f4f4f4;
+        }
+
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .borrar {
+            background-color: #111111;
+            border-radius: 50%;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 800;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="submenu">
+            <h2>Carrito de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Subtotal</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito-items">
+                    <!-- Productos se agregarán dinámicamente aquí -->
+                </tbody>
+            </table>
+            <div class="total">
+                Total: <span id="total">$0</span>
+            </div>
+            <a href="index.html" class="pagar">seguir comprando</a>
+        </div>
+    </div>
+
+    <script src="./script/carrito.js"></script>
+</body>
+</html>
