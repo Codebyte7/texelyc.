@@ -1,7 +1,14 @@
-![Logo de TEXELYC](https://github.com/Codebyte7/texelyc./blob/main/logo.png?raw=true)
+<p align="center">
+  <img src="https://github.com/Codebyte7/texelyc./blob/main/logo.png?raw=true" alt="Descripción de la imagen" width="400"/>
+</p>
+
+
 
 
 # TEXELYC
+
+## Planteamiento del problema
+La tienda de estampados online TEXELYC en Bogotá enfrenta problemas de gestión en su plataforma, especialmente en el área de inventarios. El control manual de inventarios con tabletas, agendas y cuadernos es poco eficiente y propenso a errores, lo que provoca desabastecimientos o exceso de stock, afectando la toma de decisiones y la rentabilidad. Además, la falta de un sistema automatizado para registrar y analizar datos limita la capacidad de identificar tendencias y productos de alta demanda, dificultando decisiones estratégicas en marketing, precios y gestión de inventarios, y afectando la satisfacción y retención de clientes.
 
 ## Objetivos
 
